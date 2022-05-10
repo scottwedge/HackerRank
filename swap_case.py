@@ -18,4 +18,24 @@
 # Sample Output: hACKERrANK.COM PRESENTS "pYTHONIST 2".
 
 
+def swap(s):
+    # input: s = string
+    # output: result = string
 
+    result = ""  # Initialize output
+
+    for j in s:
+        if j.isalpha():
+	    result = result + j.swapcase()  # Swap case since alpha
+        else:
+            result = result + j  # Not alpha so just add as is
+
+    return result
+
+
+def main():
+    result = swap(s)
+
+
+if __name__ == "__main__":
+    main()
