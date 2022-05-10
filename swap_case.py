@@ -17,6 +17,11 @@
 # Sample Input: HackerRank.com presents "Pythonist 2".
 # Sample Output: hACKERrANK.COM PRESENTS "pYTHONIST 2".
 
+import pytest
+
+def test1():
+    assert swap('HackerRank.com presents "Pythonist 2"') == 'hACKERrANK.COM PRESENTS "pYTHONIST 2"'
+
 
 def swap(s):
     # input: s = string
@@ -26,7 +31,7 @@ def swap(s):
 
     for j in s:
         if j.isalpha():
-	    result = result + j.swapcase()  # Swap case since alpha
+            result = result + j.swapcase()  # Swap case since alpha
         else:
             result = result + j  # Not alpha so just add as is
 
