@@ -30,6 +30,11 @@
 # Sample Input: this is a string   
 # Sample Output: this-is-a-string
 
+import pytest
+
+def test1():
+    assert split_and_join("This is a line") == "This-is-a-line"
+
 
 def split_and_join(line):
     result = line.split(sep = " ")
