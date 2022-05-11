@@ -33,3 +33,12 @@
 # The input read by the program is stored as a string data type. A string is a collection of characters.
 # 
 
+def what_name():
+    first = input("Enter first name: ")
+    last = input("Enter last name: ")
+
+    print("Hello {} {}! You just delved into Python.".format(first, last))
+
+
+if __name__ == "__main__":
+    what_name()
