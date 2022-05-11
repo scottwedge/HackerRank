@@ -31,3 +31,13 @@
 # Sample Output: this-is-a-string
 
 
+def split_and_join(line):
+    result = line.split(sep = " ")
+    result = "-".join(result)
+    return result
+
+
+if __name__ == "__main__":
+    line = "This is a line"
+    res = split_and_join(line)
+    print(res)
